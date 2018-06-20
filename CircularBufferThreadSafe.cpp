@@ -1,8 +1,6 @@
 // CircularBufferThreadSafe.cpp : Defines the entry point for the console application.
 /*
 
-Levi after interview
-
 The main idea of circle buffer is known.
 How to make it thread safe?
 We suppose that there are two threads: to put and to read
@@ -14,10 +12,8 @@ Another small difficulty is how to know what is the state of buffer when both po
 is it empty or full?
 To avoid the problem we take internally capacity one more than necessary and use it to avoid equality of pointers.
 
-
-
 */
-#include "stdafx.h"
+#include "stdafx.h"  // for VS
 
 #include <iostream>
 using namespace std;
