@@ -69,7 +69,6 @@ public:
 			Put(a);
 		return true;
 	}
-	const A& operator[](unsigned int i) { if (i < Contains())return p_start_data[i] else return 0; }
 	friend ostream & operator<<(ostream & os, const CCBuffer & cb) {
 		cout << "Capacity: " << cb.Capacity() << " Contains: " << cb.Contains() << " Left: " << cb.Left() << endl;
 		for (unsigned int i = 0; i < cb.Contains(); i++) {
